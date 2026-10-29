@@ -1,0 +1,104 @@
+{
+  "dataset": "edge_iiot",
+  "model": "mlp_h8",
+  "loss": "rap_kd",
+  "seed": 2,
+  "teacher": "cnn_bilstm_mha_ce_s0",
+  "hyper": {
+    "T": 1.0,
+    "alpha": 0.9,
+    "beta": 0.5,
+    "tau": 1.0
+  },
+  "params": 469,
+  "size_kb_fp32": 1.8,
+  "size_kb_int8": 0.5,
+  "best_epoch": 50,
+  "epochs_run": 50,
+  "val_macro_f1": 0.5834117208012791,
+  "train_seconds": 3.6,
+  "test": {
+    "accuracy": 0.77191298784389,
+    "macro_f1": 0.5961459751464784,
+    "per_class": {
+      "normal": {
+        "precision": 0.9593,
+        "recall": 0.9916,
+        "f1": 0.9752,
+        "support": 832
+      },
+      "ddos_udp": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 281
+      },
+      "ddos_http": {
+        "precision": 0.4226,
+        "recall": 0.8044,
+        "f1": 0.5541,
+        "support": 818
+      },
+      "ddos_tcp": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1202
+      },
+      "ransomware": {
+        "precision": 0.597,
+        "recall": 0.3188,
+        "f1": 0.4157,
+        "support": 1631
+      },
+      "sql_injection": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 249
+      },
+      "uploading": {
+        "precision": 0.5455,
+        "recall": 0.1395,
+        "f1": 0.2222,
+        "support": 43
+      },
+      "backdoor": {
+        "precision": 0.6376,
+        "recall": 0.8043,
+        "f1": 0.7114,
+        "support": 1794
+      },
+      "vulnerability_scanner": {
+        "precision": 0.9848,
+        "recall": 0.8885,
+        "f1": 0.9342,
+        "support": 1533
+      },
+      "port_scanning": {
+        "precision": 0.9921,
+        "recall": 1.0,
+        "f1": 0.996,
+        "support": 878
+      },
+      "xss": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 37
+      },
+      "password": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 9
+      },
+      "mitm": {
+        "precision": 0.9846,
+        "recall": 0.9014,
+        "f1": 0.9412,
+        "support": 71
+      }
+    }
+  }
+}

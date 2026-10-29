@@ -1,0 +1,86 @@
+{
+  "dataset": "ton_iot",
+  "model": "mlp_h256",
+  "loss": "bt_kd",
+  "seed": 2,
+  "teacher": "cnn_bilstm_mha_la_s0",
+  "hyper": {
+    "T": 1.0,
+    "alpha": 0.9,
+    "beta": 0.5,
+    "tau": 1.0
+  },
+  "params": 57226,
+  "size_kb_fp32": 223.5,
+  "size_kb_int8": 55.9,
+  "best_epoch": 33,
+  "epochs_run": 41,
+  "val_macro_f1": 0.9248835969133499,
+  "train_seconds": 5.4,
+  "test": {
+    "accuracy": 0.9620578778135048,
+    "macro_f1": 0.9173278845507019,
+    "per_class": {
+      "normal": {
+        "precision": 0.9905,
+        "recall": 0.974,
+        "f1": 0.9822,
+        "support": 4731
+      },
+      "backdoor": {
+        "precision": 0.9923,
+        "recall": 0.9898,
+        "f1": 0.9911,
+        "support": 393
+      },
+      "ddos": {
+        "precision": 0.9812,
+        "recall": 0.9655,
+        "f1": 0.9732,
+        "support": 2374
+      },
+      "dos": {
+        "precision": 0.9631,
+        "recall": 0.8936,
+        "f1": 0.927,
+        "support": 1287
+      },
+      "injection": {
+        "precision": 0.9822,
+        "recall": 0.9531,
+        "f1": 0.9675,
+        "support": 3945
+      },
+      "password": {
+        "precision": 0.9923,
+        "recall": 0.9764,
+        "f1": 0.9843,
+        "support": 3049
+      },
+      "scanning": {
+        "precision": 0.9163,
+        "recall": 0.9542,
+        "f1": 0.9349,
+        "support": 895
+      },
+      "ransomware": {
+        "precision": 0.7538,
+        "recall": 1.0,
+        "f1": 0.8596,
+        "support": 49
+      },
+      "xss": {
+        "precision": 0.9046,
+        "recall": 0.9757,
+        "f1": 0.9388,
+        "support": 1730
+      },
+      "mitm": {
+        "precision": 0.4684,
+        "recall": 0.8937,
+        "f1": 0.6146,
+        "support": 207
+      }
+    }
+  }
+}

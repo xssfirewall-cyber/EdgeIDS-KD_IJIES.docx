@@ -1,0 +1,79 @@
+{
+  "dataset": "unsw_nb15",
+  "model": "mlp_h256",
+  "loss": "ce",
+  "seed": 1,
+  "params": 50826,
+  "size_kb_fp32": 198.5,
+  "size_kb_int8": 49.6,
+  "best_epoch": 38,
+  "epochs_run": 46,
+  "val_macro_f1": 0.582786983866254,
+  "train_seconds": 6.4,
+  "test": {
+    "accuracy": 0.8533456757471568,
+    "macro_f1": 0.6043413167161369,
+    "per_class": {
+      "normal": {
+        "precision": 0.9034,
+        "recall": 0.9358,
+        "f1": 0.9193,
+        "support": 17061
+      },
+      "generic": {
+        "precision": 0.9768,
+        "recall": 0.8675,
+        "f1": 0.9189,
+        "support": 1457
+      },
+      "exploits": {
+        "precision": 0.8022,
+        "recall": 0.8902,
+        "f1": 0.8439,
+        "support": 5090
+      },
+      "fuzzers": {
+        "precision": 0.6964,
+        "recall": 0.5885,
+        "f1": 0.638,
+        "support": 3750
+      },
+      "dos": {
+        "precision": 0.587,
+        "recall": 0.2234,
+        "f1": 0.3237,
+        "support": 725
+      },
+      "reconnaissance": {
+        "precision": 0.8004,
+        "recall": 0.8836,
+        "f1": 0.84,
+        "support": 1684
+      },
+      "analysis": {
+        "precision": 0.8824,
+        "recall": 0.1667,
+        "f1": 0.2804,
+        "support": 90
+      },
+      "backdoor": {
+        "precision": 0.6571,
+        "recall": 0.3286,
+        "f1": 0.4381,
+        "support": 70
+      },
+      "shellcode": {
+        "precision": 0.5613,
+        "recall": 0.5225,
+        "f1": 0.5412,
+        "support": 289
+      },
+      "worms": {
+        "precision": 0.75,
+        "recall": 0.1875,
+        "f1": 0.3,
+        "support": 32
+      }
+    }
+  }
+}

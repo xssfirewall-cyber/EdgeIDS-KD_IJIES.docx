@@ -1,0 +1,97 @@
+{
+  "dataset": "edge_iiot",
+  "model": "mlp_h16",
+  "loss": "ce",
+  "seed": 2,
+  "params": 989,
+  "size_kb_fp32": 3.9,
+  "size_kb_int8": 1.0,
+  "best_epoch": 28,
+  "epochs_run": 36,
+  "val_macro_f1": 0.6423453947815616,
+  "train_seconds": 1.9,
+  "test": {
+    "accuracy": 0.8409042439752612,
+    "macro_f1": 0.6511196346281826,
+    "per_class": {
+      "normal": {
+        "precision": 0.9976,
+        "recall": 0.9904,
+        "f1": 0.994,
+        "support": 832
+      },
+      "ddos_udp": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 281
+      },
+      "ddos_http": {
+        "precision": 0.7718,
+        "recall": 0.835,
+        "f1": 0.8021,
+        "support": 818
+      },
+      "ddos_tcp": {
+        "precision": 0.9942,
+        "recall": 1.0,
+        "f1": 0.9971,
+        "support": 1202
+      },
+      "ransomware": {
+        "precision": 0.7006,
+        "recall": 0.6413,
+        "f1": 0.6697,
+        "support": 1631
+      },
+      "sql_injection": {
+        "precision": 0.4677,
+        "recall": 0.3494,
+        "f1": 0.4,
+        "support": 249
+      },
+      "uploading": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 43
+      },
+      "backdoor": {
+        "precision": 0.6868,
+        "recall": 0.7542,
+        "f1": 0.7189,
+        "support": 1794
+      },
+      "vulnerability_scanner": {
+        "precision": 0.9262,
+        "recall": 0.9576,
+        "f1": 0.9416,
+        "support": 1533
+      },
+      "port_scanning": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 878
+      },
+      "xss": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 37
+      },
+      "password": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 9
+      },
+      "mitm": {
+        "precision": 0.9846,
+        "recall": 0.9014,
+        "f1": 0.9412,
+        "support": 71
+      }
+    }
+  }
+}

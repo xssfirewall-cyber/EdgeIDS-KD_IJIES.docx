@@ -1,0 +1,85 @@
+{
+  "dataset": "nbaiot",
+  "model": "cnn_s",
+  "loss": "ce",
+  "seed": 1,
+  "params": 6123,
+  "size_kb_fp32": 23.9,
+  "size_kb_int8": 6.0,
+  "best_epoch": 37,
+  "epochs_run": 45,
+  "val_macro_f1": 0.9022148830602584,
+  "train_seconds": 18.6,
+  "test": {
+    "accuracy": 0.941422875534419,
+    "macro_f1": 0.9050951894993253,
+    "per_class": {
+      "benign": {
+        "precision": 0.999,
+        "recall": 0.9996,
+        "f1": 0.9993,
+        "support": 18000
+      },
+      "gafgyt.combo": {
+        "precision": 0.9228,
+        "recall": 0.9898,
+        "f1": 0.9551,
+        "support": 9662
+      },
+      "gafgyt.junk": {
+        "precision": 0.9818,
+        "recall": 0.8653,
+        "f1": 0.9199,
+        "support": 5931
+      },
+      "gafgyt.scan": {
+        "precision": 0.9988,
+        "recall": 0.9985,
+        "f1": 0.9986,
+        "support": 5841
+      },
+      "gafgyt.tcp": {
+        "precision": 0.7368,
+        "recall": 0.7,
+        "f1": 0.7179,
+        "support": 20
+      },
+      "gafgyt.udp": {
+        "precision": 0.8421,
+        "recall": 0.6957,
+        "f1": 0.7619,
+        "support": 23
+      },
+      "mirai.ack": {
+        "precision": 0.8856,
+        "recall": 0.8282,
+        "f1": 0.8559,
+        "support": 12971
+      },
+      "mirai.scan": {
+        "precision": 0.9998,
+        "recall": 0.9999,
+        "f1": 0.9999,
+        "support": 12401
+      },
+      "mirai.syn": {
+        "precision": 0.9998,
+        "recall": 0.9998,
+        "f1": 0.9998,
+        "support": 13063
+      },
+      "mirai.udp": {
+        "precision": 0.855,
+        "recall": 0.8877,
+        "f1": 0.871,
+        "support": 13422
+      },
+      "mirai.udpplain": {
+        "precision": 0.8656,
+        "recall": 0.8878,
+        "f1": 0.8766,
+        "support": 12751
+      }
+    }
+  }
+}

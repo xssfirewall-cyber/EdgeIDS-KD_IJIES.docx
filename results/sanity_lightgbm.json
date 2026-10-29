@@ -1,0 +1,48 @@
+{
+  "ton_iot": {
+    "macro_f1": 0.9469519910151384,
+    "per_class_recall": {
+      "normal": 0.9928,
+      "backdoor": 0.9924,
+      "ddos": 0.9798,
+      "dos": 0.9301,
+      "injection": 0.9678,
+      "password": 0.9823,
+      "scanning": 0.9765,
+      "ransomware": 0.9592,
+      "xss": 0.974,
+      "mitm": 0.8068
+    }
+  },
+  "unsw_nb15": {
+    "macro_f1": 0.6177267967669291,
+    "per_class_recall": {
+      "normal": 0.9457,
+      "generic": 0.8998,
+      "exploits": 0.8931,
+      "fuzzers": 0.5723,
+      "dos": 0.2372,
+      "reconnaissance": 0.8878,
+      "analysis": 0.3222,
+      "backdoor": 0.4857,
+      "shellcode": 0.6713,
+      "worms": 0.3438
+    }
+  },
+  "nbaiot": {
+    "macro_f1": 0.816416494372569,
+    "per_class_recall": {
+      "benign": 0.9947,
+      "gafgyt.combo": 0.9973,
+      "gafgyt.junk": 0.9958,
+      "gafgyt.scan": 0.9832,
+      "gafgyt.tcp": 0.0,
+      "gafgyt.udp": 0.0,
+      "mirai.ack": 0.9981,
+      "mirai.scan": 0.9997,
+      "mirai.syn": 1.0,
+      "mirai.udp": 0.9995,
+      "mirai.udpplain": 0.9998
+    }
+  }
+}

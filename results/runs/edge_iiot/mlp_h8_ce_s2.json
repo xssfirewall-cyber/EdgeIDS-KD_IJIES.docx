@@ -1,0 +1,97 @@
+{
+  "dataset": "edge_iiot",
+  "model": "mlp_h8",
+  "loss": "ce",
+  "seed": 2,
+  "params": 469,
+  "size_kb_fp32": 1.8,
+  "size_kb_int8": 0.5,
+  "best_epoch": 29,
+  "epochs_run": 37,
+  "val_macro_f1": 0.4635545818502801,
+  "train_seconds": 1.9,
+  "test": {
+    "accuracy": 0.736510983152058,
+    "macro_f1": 0.46366583398663413,
+    "per_class": {
+      "normal": {
+        "precision": 0.9705,
+        "recall": 0.9892,
+        "f1": 0.9798,
+        "support": 832
+      },
+      "ddos_udp": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 281
+      },
+      "ddos_http": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 818
+      },
+      "ddos_tcp": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1202
+      },
+      "ransomware": {
+        "precision": 0.4563,
+        "recall": 0.55,
+        "f1": 0.4987,
+        "support": 1631
+      },
+      "sql_injection": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 249
+      },
+      "uploading": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 43
+      },
+      "backdoor": {
+        "precision": 0.541,
+        "recall": 0.8205,
+        "f1": 0.652,
+        "support": 1794
+      },
+      "vulnerability_scanner": {
+        "precision": 0.9161,
+        "recall": 0.8832,
+        "f1": 0.8994,
+        "support": 1533
+      },
+      "port_scanning": {
+        "precision": 0.9955,
+        "recall": 1.0,
+        "f1": 0.9977,
+        "support": 878
+      },
+      "xss": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 37
+      },
+      "password": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 9
+      },
+      "mitm": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 71
+      }
+    }
+  }
+}

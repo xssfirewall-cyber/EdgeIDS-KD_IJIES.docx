@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+/data/
+/data_cache/
+/checkpoints/
+/models/
+/paper/
+/results/bench_rows/
+*.log

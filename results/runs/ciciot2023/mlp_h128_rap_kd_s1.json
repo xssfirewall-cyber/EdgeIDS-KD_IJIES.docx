@@ -1,0 +1,230 @@
+{
+  "dataset": "ciciot2023",
+  "model": "mlp_h128",
+  "loss": "rap_kd",
+  "seed": 1,
+  "teacher": "cnn_bilstm_mha_ce_s0",
+  "hyper": {
+    "T": 1.0,
+    "alpha": 0.9,
+    "beta": 0.5,
+    "tau": 1.0
+  },
+  "params": 16482,
+  "size_kb_fp32": 64.4,
+  "size_kb_int8": 16.1,
+  "best_epoch": 50,
+  "epochs_run": 50,
+  "val_macro_f1": 0.6917714704058703,
+  "train_seconds": 43.9,
+  "test": {
+    "accuracy": 0.8109296065200998,
+    "macro_f1": 0.6898987579436325,
+    "per_class": {
+      "benigntraffic": {
+        "precision": 0.5867,
+        "recall": 0.7715,
+        "f1": 0.6665,
+        "support": 10000
+      },
+      "ddos-icmp_flood": {
+        "precision": 0.9999,
+        "recall": 0.9985,
+        "f1": 0.9992,
+        "support": 10000
+      },
+      "ddos-udp_flood": {
+        "precision": 0.7704,
+        "recall": 0.8742,
+        "f1": 0.819,
+        "support": 10000
+      },
+      "ddos-tcp_flood": {
+        "precision": 0.7096,
+        "recall": 0.9568,
+        "f1": 0.8149,
+        "support": 10000
+      },
+      "ddos-pshack_flood": {
+        "precision": 0.9994,
+        "recall": 0.9982,
+        "f1": 0.9988,
+        "support": 10000
+      },
+      "ddos-syn_flood": {
+        "precision": 0.6001,
+        "recall": 0.9345,
+        "f1": 0.7309,
+        "support": 10000
+      },
+      "ddos-rstfinflood": {
+        "precision": 0.9998,
+        "recall": 0.9991,
+        "f1": 0.9994,
+        "support": 10000
+      },
+      "ddos-synonymousip_flood": {
+        "precision": 0.9737,
+        "recall": 0.7369,
+        "f1": 0.8389,
+        "support": 10000
+      },
+      "ddos-icmp_fragmentation": {
+        "precision": 0.9901,
+        "recall": 0.9828,
+        "f1": 0.9864,
+        "support": 10000
+      },
+      "ddos-udp_fragmentation": {
+        "precision": 0.988,
+        "recall": 0.9886,
+        "f1": 0.9883,
+        "support": 10000
+      },
+      "ddos-ack_fragmentation": {
+        "precision": 0.992,
+        "recall": 0.9838,
+        "f1": 0.9879,
+        "support": 10000
+      },
+      "ddos-http_flood": {
+        "precision": 0.8944,
+        "recall": 0.8952,
+        "f1": 0.8948,
+        "support": 5755
+      },
+      "ddos-slowloris": {
+        "precision": 0.8803,
+        "recall": 0.9603,
+        "f1": 0.9185,
+        "support": 4685
+      },
+      "dos-udp_flood": {
+        "precision": 0.8536,
+        "recall": 0.7367,
+        "f1": 0.7908,
+        "support": 10000
+      },
+      "dos-tcp_flood": {
+        "precision": 0.9349,
+        "recall": 0.6059,
+        "f1": 0.7353,
+        "support": 10000
+      },
+      "dos-syn_flood": {
+        "precision": 0.8495,
+        "recall": 0.5747,
+        "f1": 0.6856,
+        "support": 10000
+      },
+      "dos-http_flood": {
+        "precision": 0.9366,
+        "recall": 0.9207,
+        "f1": 0.9286,
+        "support": 10000
+      },
+      "mirai-greeth_flood": {
+        "precision": 0.9632,
+        "recall": 0.9502,
+        "f1": 0.9567,
+        "support": 10000
+      },
+      "mirai-udpplain": {
+        "precision": 0.9973,
+        "recall": 0.9943,
+        "f1": 0.9958,
+        "support": 10000
+      },
+      "mirai-greip_flood": {
+        "precision": 0.9513,
+        "recall": 0.9566,
+        "f1": 0.9539,
+        "support": 10000
+      },
+      "recon-hostdiscovery": {
+        "precision": 0.6536,
+        "recall": 0.7819,
+        "f1": 0.712,
+        "support": 10000
+      },
+      "recon-osscan": {
+        "precision": 0.5051,
+        "recall": 0.3194,
+        "f1": 0.3913,
+        "support": 10000
+      },
+      "recon-portscan": {
+        "precision": 0.5071,
+        "recall": 0.5455,
+        "f1": 0.5256,
+        "support": 10000
+      },
+      "recon-pingsweep": {
+        "precision": 0.2431,
+        "recall": 0.1947,
+        "f1": 0.2162,
+        "support": 452
+      },
+      "vulnerabilityscan": {
+        "precision": 0.9454,
+        "recall": 0.9676,
+        "f1": 0.9564,
+        "support": 7477
+      },
+      "mitm-arpspoofing": {
+        "precision": 0.7179,
+        "recall": 0.652,
+        "f1": 0.6834,
+        "support": 10000
+      },
+      "dns_spoofing": {
+        "precision": 0.5486,
+        "recall": 0.5881,
+        "f1": 0.5677,
+        "support": 10000
+      },
+      "dictionarybruteforce": {
+        "precision": 0.4702,
+        "recall": 0.3226,
+        "f1": 0.3827,
+        "support": 2613
+      },
+      "browserhijacking": {
+        "precision": 0.4211,
+        "recall": 0.3754,
+        "f1": 0.3969,
+        "support": 1172
+      },
+      "commandinjection": {
+        "precision": 0.3339,
+        "recall": 0.3355,
+        "f1": 0.3347,
+        "support": 1082
+      },
+      "sqlinjection": {
+        "precision": 0.3165,
+        "recall": 0.2145,
+        "f1": 0.2557,
+        "support": 1049
+      },
+      "xss": {
+        "precision": 0.1554,
+        "recall": 0.1313,
+        "f1": 0.1424,
+        "support": 769
+      },
+      "backdoor_malware": {
+        "precision": 0.2612,
+        "recall": 0.154,
+        "f1": 0.1937,
+        "support": 643
+      },
+      "uploading_attack": {
+        "precision": 0.0667,
+        "recall": 0.004,
+        "f1": 0.0075,
+        "support": 250
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "dataset": "edge_iiot",
+  "model": "mlp_h512",
+  "loss": "wce",
+  "seed": 2,
+  "params": 158221,
+  "size_kb_fp32": 618.1,
+  "size_kb_int8": 154.5,
+  "best_epoch": 25,
+  "epochs_run": 33,
+  "val_macro_f1": 0.8008383372866709,
+  "train_seconds": 1.7,
+  "test": {
+    "accuracy": 0.8733205374280231,
+    "macro_f1": 0.7848526313751744,
+    "per_class": {
+      "normal": {
+        "precision": 1.0,
+        "recall": 0.9892,
+        "f1": 0.9946,
+        "support": 832
+      },
+      "ddos_udp": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 281
+      },
+      "ddos_http": {
+        "precision": 0.9816,
+        "recall": 0.846,
+        "f1": 0.9087,
+        "support": 818
+      },
+      "ddos_tcp": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1202
+      },
+      "ransomware": {
+        "precision": 0.7276,
+        "recall": 0.7517,
+        "f1": 0.7394,
+        "support": 1631
+      },
+      "sql_injection": {
+        "precision": 0.5506,
+        "recall": 0.9398,
+        "f1": 0.6944,
+        "support": 249
+      },
+      "uploading": {
+        "precision": 0.3333,
+        "recall": 0.907,
+        "f1": 0.4875,
+        "support": 43
+      },
+      "backdoor": {
+        "precision": 0.7822,
+        "recall": 0.7308,
+        "f1": 0.7556,
+        "support": 1794
+      },
+      "vulnerability_scanner": {
+        "precision": 0.995,
+        "recall": 0.9152,
+        "f1": 0.9534,
+        "support": 1533
+      },
+      "port_scanning": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 878
+      },
+      "xss": {
+        "precision": 0.3467,
+        "recall": 0.7027,
+        "f1": 0.4643,
+        "support": 37
+      },
+      "password": {
+        "precision": 0.1333,
+        "recall": 0.4444,
+        "f1": 0.2051,
+        "support": 9
+      },
+      "mitm": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 71
+      }
+    }
+  }
+}
